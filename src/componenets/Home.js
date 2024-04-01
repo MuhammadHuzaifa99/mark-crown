@@ -1,50 +1,51 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../assets/logoMark.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logoMark.png';
+import backgroundImage from '../assets/bg.jpg';
 
 function Home() {
   return (
-    <div className="min-h-screen py-40 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
-    <div className="container mx-auto">
-      <div className="flex w-8/12 rounded-xl mx-auto shadow-lg overflow-hidden">
-        <div className="w-1/2  bg-local flex flex-col items-center justify-center" style={{backgroundImage: `url(${logo})`}} alt={'logo'}> 
-          <h1 className="text-black text-center text-3xl mb-3">Welcome</h1>
+    <div className="h-screen w-screen flex justify-center items-center">
+      <div className="flex h-screen w-screen">
+      <div className="w-1/2 relative flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
+  <div className="absolute top-1/2 transform -translate-y-1/2 bg-white p-10 rounded-2xl shadow-md bg-gradient-to-b from-white to-pink-300">
+    <img src={logo} alt="Logo" className="w-40 h-40 mx-auto" />
+  </div>
+</div>
+
+        <div className="w-1/2 bg-white py-20 px-12">
+          <h2 className="text-6xl text-center">READY TO CROWN YOUR MARKETING?</h2>
           <div>
-            <p className="text-black text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <h2 className="text-center font-baloo-2 text-blue-600 text-3xl mt-10">Register</h2>
           </div>
-        </div>
-        <div className="w-1/2 bg-white py-16 px-12">
-          <h2 className="text-3xl text-center">Register</h2>
-          <p className="mb-4 mt-4">
-            Create your account. It's free and only take a minute
-          </p>
+         
           <form action="#">
-          <div className="grid grid-cols-2 gap-5">
-            <input type="text" placeholder="Firstname" className="border border-gray-100 py-1 px-2"></input>
-            <input type="text" placeholder="Lastname" className="border border-gray-100 py-1 px-2"></input>
-          </div>
-          <div className="mt-5">
-          <input type="email" placeholder="Email" className="border border-gray-100 py-1 px-2 w-full"></input>
-          </div>
-          <div className="mt-5">
-          <input type="password" placeholder="Password" className="border border-gray-100 py-1 px-2 w-full"></input>
-          </div>
-          <div className="mt-5">
-          <input type="password" placeholder="Confirm Password" className="border border-gray-100 py-1 px-2 w-full"></input>
-          </div>
-          <div className="mt-5">
-            <input type="checkbox" className="border border-gray-400 "/>
-              <span className="pl-2">I accept the<Link to="/" className="text-purple-500"> Terms of Uses </Link> & <Link to="/" className="text-purple-500">Privacy Plicy</Link></span>
-          </div>
+            <div className="mt-5 flex justify-center">
+              <input type="text" placeholder="Firstname" className="border border-blue-300 py-1 px-2 w-96 rounded-full" />
+            </div>
+            <div className="mt-5 flex justify-center">
+              <input type="email" placeholder="Email" className="border border-blue-300 py-1 px-2 w-96 rounded-full" />
+            </div>
+            <div className="mt-5 flex justify-center relative">
+              <input type="password" placeholder="Password" className="border border-blue-300 py-1 px-2 w-96 rounded-full" />
+            </div> 
+            <Link to="/"><p className="ml-96 text-red-500">Need Help?</p></Link>
           </form>
-          <div className="mt-5">
-            <button className="w-full bg-purple-500 py-3 text-center text-white rounded-xl">Register Now</button>
+          <div className="mt-3 flex justify-center drop-shadow-lg">
+            <button className="w-40 py-3 text-center text-white rounded-full bg-gradient-to-b from-blue-400 to-blue-800">Sign up</button>
           </div>
+          <div className="mt-8 flex justify-center drop-shadow-lg">
+            <p>Already Registered?</p>
+            </div>
+          <div className="mt-1 flex justify-center drop-shadow-lg">
+            
+            <button className="w-60 py-3 text-center text-white rounded-full bg-gradient-to-r from-yellow-400 to-pink-400">Sign up</button>
+          </div>
+          
         </div>
       </div>
     </div>
-  </div>
   );
 }
 
-export default Home
+export default Home;
