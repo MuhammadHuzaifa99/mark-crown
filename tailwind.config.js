@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        baloo : ['"Baloo 2"', 'sans-serif'],
+        'Baloo': ['Baloo+2'],
       },
     },
   },

@@ -1,14 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-    font-family: 'Baloo 2';
-    src: url('https://fonts.googleapis.com') format('woff2'),
-         url('https://fonts.gstatic.com" crossorigin') format('woff');
-  }
-  .baloo-2 {
-    font-family: 'Baloo 2', sans-serif;
-    font-optical-sizing: auto;
-  }
+
 
 
