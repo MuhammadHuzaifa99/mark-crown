@@ -29,10 +29,11 @@ const Home = () => {
         </div>
 
         <div className="w-full sm:w-1/2 bg-white py-20 px-12">
-          <h2 className="text-6xl text-center">READY TO CROWN YOUR MARKETING?</h2>
+          <h2 className="text-6xl text-center sm: text-3xl text-center">READY TO CROWN YOUR MARKETING?</h2>
           <div>
             <h2 className="text-center font-Baloo text-blue-600 text-3xl mt-10">{action}</h2>
           </div>
+
 
           <form>
             {showNameInput && (
