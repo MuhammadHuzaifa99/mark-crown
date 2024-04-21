@@ -52,10 +52,10 @@ const Home = () => {
             </div>
           </form>
           <div className="mt-3 flex justify-center drop-shadow-lg">
-            <button className="w-40 py-3 text-center text-white rounded-full bg-gradient-to-b from-blue-400 to-blue-800" onClick={toggleAction}>{buttonText}</button>
+            <button className="w-40 py-3 text-center text-white rounded-full bg-gradient-to-b from-blue-400 to-blue-800">{buttonText}</button>
           </div>
           <div className="mt-8 flex justify-center drop-shadow-lg">
-            <p>{action === "Login" ? "Already Registered?" : "Not Registered Yet?"}</p>
+            <p>{action === "Login" ? "Not Registered Yet?" : "Already Registered?"}</p>
           </div>
           <div className="mt-1 flex justify-center drop-shadow-lg">
             <button className="w-60 py-3 text-center text-white rounded-full bg-gradient-to-r from-yellow-400 to-pink-400" onClick={toggleAction}>{action === "Login" ? "Sign up" : "Sign in"}</button>
